@@ -11167,8 +11167,8 @@ p {
 }
 
 #mainNav {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    /* padding-top: 1rem;
+    padding-bottom: 1rem; */
     background-color: #212529;
 }
 
@@ -11772,12 +11772,33 @@ section#contact form#contactForm :-ms-input-placeholder {
     padding: 0;
 }
 
-.svg-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: -1;
+@media (max-width: 320px) {}
+
+@media (max-width: 992px) {
+    .svg-container {
+        position: absolute;
+        top: 67px;
+        right: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+@media (min-width: 992px) {
+    .svg-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+header {
+    color: #fff;
+    padding-top: 10vw;
+    padding-bottom: 30vw;
+    text-align: center;
 }
 
 svg path {
@@ -11797,13 +11818,6 @@ body {
 
 h3 {
     font-weight: 400;
-}
-
-header {
-    color: #fff;
-    padding-top: 10vw;
-    padding-bottom: 30vw;
-    text-align: center;
 }
 
 main {
