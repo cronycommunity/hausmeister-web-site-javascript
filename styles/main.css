@@ -11774,6 +11774,8 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 @media (max-width: 320px) {}
 
+@media (max-width: 768px) {}
+
 @media (max-width: 992px) {
     .svg-container {
         position: absolute;
