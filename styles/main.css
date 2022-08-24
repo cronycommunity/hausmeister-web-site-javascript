@@ -27,22 +27,26 @@ html {
 header,
 main,
 footer {
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .card {
-    height: 400px;
+    height: 500px;
     position: relative;
     padding: 20px;
     box-sizing: border-box;
+    color: #000;
     display: flex;
     align-items: flex-end;
     text-decoration: none;
     border: 4px solid #b0215e;
     margin-bottom: 20px;
-    background-image: url('C:/Users/fatih/PROJEKTE/Hausmeister_neu/hausmeister-web-site-javascript/images/gartenpflege.jpg');
+    /* background-image: url('C:/Users/fatih/PROJEKTE/Hausmeister_neu/hausmeister-web-site-javascript/images/gartenpflege.jpg'); */
     background-size: cover;
+    background-image: url('/images/gartenpflege.jpg');
+
+    src="images/gartenpflege.png";
 
     @include media {
         height: 500px;
