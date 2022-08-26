@@ -1,4 +1,5 @@
 /*############## MAIN ##################*/
+
 @mixin media() {
     @media (min-width: 768px) {
         @content;
@@ -18,7 +19,6 @@ html {
     font-weight: 900;
     font-size: 30px;
     margin: 20px 0;
-
     @include media {
         font-size: 60px;
     }
@@ -45,9 +45,7 @@ footer {
     /* background-image: url('C:/Users/fatih/PROJEKTE/Hausmeister_neu/hausmeister-web-site-javascript/images/gartenpflege.jpg'); */
     background-size: cover;
     background-image: url('/images/gartenpflege.jpg');
-
     src="images/gartenpflege.png";
-
     @include media {
         height: 500px;
     }
@@ -62,7 +60,6 @@ footer {
     background: rgba(194, 193, 193, 0.76);
     box-sizing: border-box;
     padding: 40px;
-
     @include media {
         width: 50%;
         height: 100%;
@@ -78,7 +75,6 @@ footer {
     text-shadow: 0px 2px 2px #a6f8d5;
     position: relative;
     margin: 0 0 20px 0;
-
     @include media {
         font-size: 30px;
     }
@@ -96,6 +92,7 @@ footer {
 .card3 {
     background-image: url('https://images.unsplash.com/photo-1557576842-3bc6093a5085?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
 }
+
 
 /* footer {
     display: flex;
@@ -125,10 +122,8 @@ footer {
 } */
 
 
-
-
-
 /* ================NAVBAR=================== */
+
 
 /* #
 /*!
@@ -11962,7 +11957,7 @@ main {
 
 main::after {
     border-right: 2px dashed #eee;
-    content: '';
+    /* content: ''; */
     position: absolute;
     top: calc(10vh + 1.618em);
     bottom: 0;
