@@ -46,11 +46,14 @@ footer {
     background-size: cover;
     background-image: url('/images/gartenpflege.jpg');
 
-    src="images/gartenpflege.png";
+    /* src="images/gartenpflege.png"; */
 
     @include media {
         height: 500px;
     }
+}
+a.card{
+    
 }
 
 .inner {
@@ -68,7 +71,14 @@ footer {
         height: 100%;
     }
 }
+ul.inner {
+    text-align: left;
+}
 
+.inner li{
+    font-size: larger;
+    /* color: #066173; */
+}
 .title {
     font-size: 24px;
     color: black;
@@ -90,11 +100,13 @@ footer {
 }
 
 .card2 {
-    background-image: url('https://images.unsplash.com/photo-1496317556649-f930d733eea3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
 }
 
 .card3 {
-    background-image: url('https://images.unsplash.com/photo-1557576842-3bc6093a5085?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+}
+.untertitel{
+    padding: 50px;
+    font-style: italic;
 }
 
 /* footer {
