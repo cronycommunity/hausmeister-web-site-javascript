@@ -52,16 +52,13 @@ footer {
         height: 500px;
     }
 }
-a.card{
-    
-}
 
 .inner {
     height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     background: rgba(194, 193, 193, 0.76);
     box-sizing: border-box;
     padding: 40px;
@@ -71,14 +68,14 @@ a.card{
         height: 100%;
     }
 }
-ul.inner {
+/* ul.inner {
     text-align: left;
-}
+} */
 
-.inner li{
+/* .inner li{
     font-size: larger;
-    /* color: #066173; */
-}
+    color: #066173;
+} */
 .title {
     font-size: 24px;
     color: black;
@@ -87,28 +84,14 @@ ul.inner {
     color: #181818;
     text-shadow: 0px 2px 2px #a6f8d5;
     position: relative;
-    margin: 0 0 20px 0;
+    /* margin: 0 0 20px 0; */
 
     @include media {
         font-size: 30px;
     }
 }
 
-.subtitle {
-    color: #b0215e;
-    text-align: center;
-}
-
-.card2 {
-}
-
-.card3 {
-}
-.untertitel{
-    padding: 50px;
-    font-style: italic;
-}
-
+/*  
 /* footer {
     display: flex;
     justify-content: center;
@@ -332,13 +315,13 @@ p {
 }
 
 abbr[title],
-abbr[data-bs-original-title] {
+/* abbr[data-bs-original-title] {
     -webkit-text-decoration: underline dotted;
     text-decoration: underline dotted;
     cursor: help;
     -webkit-text-decoration-skip-ink: none;
     text-decoration-skip-ink: none;
-}
+} */
 
 address {
     margin-bottom: 1rem;
@@ -412,11 +395,10 @@ sup {
 
 a {
     color: #3d8bfd;
-    text-decoration: underline;
 }
 
 a:hover {
-    color: #0011cc;
+    color: #000000;
 }
 
 a:not([href]):not([class]),
@@ -12033,4 +12015,23 @@ flip card
 
 .card-flip:hover .card-back {
     transform: rotateY(0deg);
+}
+
+.inner {
+    margin-top: 5%;
+    text-align: left;
+    width:50%;
+    min-width: 200px;
+    position: relative;
+}
+
+.inner li{
+    text-align:left;
+     max-width:500px;
+     font-weight: bold;
+     font-size: large;
+}
+
+.inner h1{
+    text-align: left;
 }
