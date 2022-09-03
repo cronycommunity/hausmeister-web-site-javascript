@@ -1,4 +1,5 @@
 /*############## MAIN ##################*/
+
 @mixin media() {
     @media (min-width: 768px) {
         @content;
@@ -18,7 +19,6 @@ html {
     font-weight: 900;
     font-size: 30px;
     margin: 20px 0;
-
     @include media {
         font-size: 60px;
     }
@@ -45,9 +45,7 @@ footer {
     /* background-image: url('C:/Users/fatih/PROJEKTE/Hausmeister_neu/hausmeister-web-site-javascript/images/gartenpflege.jpg'); */
     background-size: cover;
     background-image: url('/images/gartenpflege.jpg');
-
     /* src="images/gartenpflege.png"; */
-
     @include media {
         height: 500px;
     }
@@ -62,20 +60,23 @@ footer {
     background: rgba(194, 193, 193, 0.76);
     box-sizing: border-box;
     padding: 40px;
-
     @include media {
         width: 50%;
         height: 100%;
     }
 }
+
+
 /* ul.inner {
     text-align: left;
 } */
+
 
 /* .inner li{
     font-size: larger;
     color: #066173;
 } */
+
 .title {
     font-size: 24px;
     color: black;
@@ -85,11 +86,11 @@ footer {
     text-shadow: 0px 2px 2px #a6f8d5;
     position: relative;
     /* margin: 0 0 20px 0; */
-
     @include media {
         font-size: 30px;
     }
 }
+
 
 /*  
 /* footer {
@@ -120,10 +121,8 @@ footer {
 } */
 
 
-
-
-
 /* ================NAVBAR=================== */
+
 
 /* #
 /*!
@@ -315,6 +314,7 @@ p {
 }
 
 abbr[title],
+
 /* abbr[data-bs-original-title] {
     -webkit-text-decoration: underline dotted;
     text-decoration: underline dotted;
@@ -11956,7 +11956,6 @@ main {
 
 main::after {
     border-right: 2px dashed #eee;
-    content: '';
     position: absolute;
     top: calc(10vh + 1.618em);
     bottom: 0;
@@ -12020,18 +12019,18 @@ flip card
 .inner {
     margin-top: 5%;
     text-align: left;
-    width:50%;
+    width: 50%;
     min-width: 200px;
     position: relative;
 }
 
-.inner li{
-    text-align:left;
-    max-width:500px;
-     font-weight: bold;
-     font-size: large;
+.inner li {
+    text-align: left;
+    max-width: 500px;
+    font-weight: bold;
+    font-size: large;
 }
 
-.inner h1{
+.inner h1 {
     text-align: left;
 }
