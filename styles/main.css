@@ -60,6 +60,18 @@ footer {
     }
 }
 
+#main {
+    background-image: url("../images/bauendreinigung.jpg");
+}
+
+#wohnungsauflosung {
+    background-image: url('../images/gartenpflege.jpg');
+}
+
+#reinigung {
+    background-image: url("../images/haushaltsaufloesung-wohnungsaufloesung-muenchen.jpg");
+}
+
 
 /* ul.inner {
     text-align: left;
