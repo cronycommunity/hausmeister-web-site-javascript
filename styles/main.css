@@ -50,38 +50,10 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    background: rgba(194, 193, 193, 0.76);
+    background: rgba(194, 193, 193, 0.6);
     box-sizing: border-box;
     padding: 40px;
-    @include media {
-        width: 50%;
-        height: 100%;
-    }
 }
-
-#main {
-    background-image: url("../images/bauendreinigung.jpg");
-}
-
-#wohnungsauflosung {
-    background-image: url('../images/gartenpflege.jpg');
-}
-
-#reinigung {
-    background-image: url("../images/haushaltsaufloesung-wohnungsaufloesung-muenchen.jpg");
-}
-
-
-/* ul.inner {
-    text-align: left;
-} */
-
-
-/* .inner li{
-    font-size: larger;
-    color: #066173;
-} */
 
 .title {
     font-size: 24px;
@@ -91,10 +63,6 @@ footer {
     color: #181818;
     text-shadow: 0px 2px 2px #a6f8d5;
     position: relative;
-    /* margin: 0 0 20px 0; */
-    @include media {
-        font-size: 30px;
-    }
 }
 
 
@@ -4968,11 +4936,9 @@ fieldset:disabled .btn {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    /* background-color: #fff; */
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
-    background-image: url("/images/gartenpflege.jpg");
 }
 
 .card>hr {
@@ -11986,13 +11952,24 @@ flip card
     position: relative;
 }
 
-.inner li {
-    text-align: left;
-    max-width: 500px;
-    font-weight: bold;
-    font-size: large;
+
+/* the codes be added later */
+
+#main {
+    background-image: url("../images/bauendreinigung.jpg");
 }
 
-.inner h1 {
-    text-align: left;
+#wohnungsauflosung {
+    background-image: url('../images/gartenpflege.jpg');
+}
+
+#reinigung {
+    background-image: url("../images/haushaltsaufloesung-wohnungsaufloesung-muenchen.jpg");
+}
+
+.bi-dot {
+    background-color: transparent !important;
+    font-size: large;
+    font-weight: bold;
+    border: #000
 }
