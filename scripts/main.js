@@ -1,61 +1,12 @@
-/*!
- * Start Bootstrap - Agency v7.0.11 (https://startbootstrap.com/theme/agency)
- * Copyright 2013-2022 Start Bootstrap
- * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
- */
-//
-// Scripts
-// 
-
-window.addEventListener('DOMContentLoaded', event => {
-
-    // Navbar shrink function
-    var navbarShrink = function() {
-        const navbarCollapsible = document.body.querySelector('#mainNav');
-        if (!navbarCollapsible) {
-            return;
-        }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
+$(function() {
+    $(window).on('scroll', function() {
+        if ($(window).scrollTop() > 10) {
+            $('.navbar').addClass('active');
         } else {
-            navbarCollapsible.classList.add('navbar-shrink')
+            $('.navbar').removeClass('active');
         }
-
-    };
-
-    // Shrink the navbar 
-    navbarShrink();
-
-    // Shrink the navbar when page is scrolled
-    document.addEventListener('scroll', navbarShrink);
-
-    // Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            offset: 74,
-        });
-    };
-
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function(responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
     });
 });
-
-
-window.onload = function() {
-
-}
 
 // ========================CURVE THEMA==========================
 (function() {
@@ -81,9 +32,11 @@ window.onload = function() {
     // Scroll Listener
     // https://developer.mozilla.org/en-US/docs/Web/Events/scroll
     window.addEventListener("scroll", function(e) {
-        this.alert("sfdsd")
-        last_known_scroll_position = window.scrollY;
 
+        asd();
+
+        last_known_scroll_position = window.scrollY;
+        console.log(last_known_scroll_position)
         if (!ticking) {
             window.requestAnimationFrame(function() {
                 scrollEvent(last_known_scroll_position);
@@ -95,6 +48,8 @@ window.onload = function() {
     });
 })();
 
+// =========================================
 
+const asd = () => {
 
-// ================================
+}
