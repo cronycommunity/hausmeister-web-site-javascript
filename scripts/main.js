@@ -81,6 +81,7 @@ window.onload = function() {
     // Scroll Listener
     // https://developer.mozilla.org/en-US/docs/Web/Events/scroll
     window.addEventListener("scroll", function(e) {
+        this.alert("sfdsd")
         last_known_scroll_position = window.scrollY;
 
         if (!ticking) {
@@ -93,3 +94,7 @@ window.onload = function() {
         ticking = true;
     });
 })();
+
+
+
+// ================================

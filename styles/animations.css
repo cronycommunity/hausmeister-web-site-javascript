@@ -1,0 +1,15 @@
+/* img {
+    animation-duration: 2s;
+    animation-name: slidingcard;
+    position: relative;
+    animation-iteration-count: 1;
+}
+
+@keyframes slidingcard {
+    from {
+        left: -1000px
+    }
+    to {
+        left: 0
+    }
+} */
