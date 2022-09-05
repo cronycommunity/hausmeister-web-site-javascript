@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("img1").style.left = "-500px";
+    document.getElementById("img2").style.left = "-500px";
+
+});
 let position = 0;
 let animationRepetingControl = 0;
 window.addEventListener("scroll", function(e) {
@@ -18,13 +23,16 @@ const imageAnimations = () => {
         iterations: 1,
     }
 
-    if (position > 0 && animationRepetingControl == 0) {
+    if (position > 100 && animationRepetingControl == 0) {
         const image = document.getElementById("img1");
         image.animate(imageSliding, imageTiming);
+        document.getElementById("img1").style.left = "0px";
         animationRepetingControl++;
     } else if (position > 500 && animationRepetingControl == 1) {
         const image = document.getElementById("img2");
         image.animate(imageSliding, imageTiming);
+        document.getElementById("img2").style.left = "0px";
+
         animationRepetingControl++;
     }
 

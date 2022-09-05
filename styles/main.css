@@ -11978,7 +11978,6 @@ flip card
     border: #000
 }
 
-.flex-wrap,
-#img1 {
-    height: 500px;
+.flex-wrap {
+    height: 300px;
 }
