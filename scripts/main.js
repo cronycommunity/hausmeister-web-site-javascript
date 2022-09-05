@@ -32,11 +32,8 @@ $(function() {
     // Scroll Listener
     // https://developer.mozilla.org/en-US/docs/Web/Events/scroll
     window.addEventListener("scroll", function(e) {
-
-        asd();
-
         last_known_scroll_position = window.scrollY;
-        console.log(last_known_scroll_position)
+
         if (!ticking) {
             window.requestAnimationFrame(function() {
                 scrollEvent(last_known_scroll_position);
@@ -47,9 +44,3 @@ $(function() {
         ticking = true;
     });
 })();
-
-// =========================================
-
-const asd = () => {
-
-}
