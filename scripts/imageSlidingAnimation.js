@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("img1").style.left = "-500px";
-    document.getElementById("img2").style.left = "-500px";
+    const image1 = document.getElementById("img1");
+    const image2 = document.getElementById("img2");
+    const image3 = document.getElementById("img3");
+    image1.style.left = "-1200px";
+    image2.style.left = "-1200px";
+    image3.style.left = "-1200px";
 
 });
 let position = 0;
@@ -23,16 +27,22 @@ const imageAnimations = () => {
         iterations: 1,
     }
 
-    if (position > 100 && animationRepetingControl == 0) {
+    if (position > 10 && animationRepetingControl == 0) {
         const image = document.getElementById("img1");
         image.animate(imageSliding, imageTiming);
         document.getElementById("img1").style.left = "0px";
         animationRepetingControl++;
-    } else if (position > 500 && animationRepetingControl == 1) {
+
+    } else if (position > 400 && animationRepetingControl == 1) {
         const image = document.getElementById("img2");
         image.animate(imageSliding, imageTiming);
         document.getElementById("img2").style.left = "0px";
+        animationRepetingControl++;
 
+    } else if (position > 800 && animationRepetingControl == 2) {
+        const image = document.getElementById("img3");
+        image.animate(imageSliding, imageTiming);
+        document.getElementById("img3").style.left = "0px";
         animationRepetingControl++;
     }
 

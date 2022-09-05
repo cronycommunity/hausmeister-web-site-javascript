@@ -28,7 +28,7 @@ header,
 main,
 footer {
     max-width: 1200px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .card {
@@ -11850,7 +11850,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 header {
     color: #fff;
     padding-top: 10vw;
-    padding-bottom: 30vw;
+    padding-bottom: 17vw;
     text-align: center;
 }
 
@@ -11874,9 +11874,6 @@ h3 {
 }
 
 main {
-    background: linear-gradient(to bottom, #ffffff 0%, #dddee1 100%);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    /* padding: 10vh 0 80vh; */
     position: relative;
     text-align: center;
     overflow: hidden;
@@ -11980,4 +11977,13 @@ flip card
 
 .flex-wrap {
     height: 300px;
+}
+
+ul>li {
+    font-weight: bold;
+    margin: 5px auto;
+}
+
+.h3 {
+    margin-top: 40px;
 }
