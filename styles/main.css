@@ -11955,9 +11955,13 @@ flip card
 
 /* the codes be added later */
 
-#main {
-    background-image: url("../images/bauendreinigung.jpg");
-}
+
+/* #img1,
+#img2 {
+    background-image: url("../images//wohnungsaufloesung.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
 
 #wohnungsauflosung {
     background-image: url('../images/gartenpflege.jpg');
@@ -11972,4 +11976,9 @@ flip card
     font-size: large;
     font-weight: bold;
     border: #000
+}
+
+.flex-wrap,
+#img1 {
+    height: 500px;
 }

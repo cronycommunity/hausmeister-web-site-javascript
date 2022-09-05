@@ -1,14 +1,10 @@
 let position = 0;
 let animationRepetingControl = 0;
 window.addEventListener("scroll", function(e) {
-
     imageAnimations();
-
     position = window.scrollY;
     console.log(position)
 });
-
-
 
 const imageAnimations = () => {
 
@@ -24,6 +20,10 @@ const imageAnimations = () => {
 
     if (position > 0 && animationRepetingControl == 0) {
         const image = document.getElementById("img1");
+        image.animate(imageSliding, imageTiming);
+        animationRepetingControl++;
+    } else if (position > 500 && animationRepetingControl == 1) {
+        const image = document.getElementById("img2");
         image.animate(imageSliding, imageTiming);
         animationRepetingControl++;
     }
