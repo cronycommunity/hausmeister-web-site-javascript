@@ -11849,8 +11849,8 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 header {
     color: #fff;
-    padding-top: 10vw;
-    padding-bottom: 17vw;
+    /* padding-top: 10vw;
+    padding-bottom: 17vw; */
     text-align: center;
 }
 
