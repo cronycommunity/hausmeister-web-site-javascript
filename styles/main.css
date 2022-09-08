@@ -28,10 +28,6 @@ ul>li {
     margin-top: 40px;
 }
 
-#footernavbar li a {
-    font-size: x-large;
-}
-
 
 /* header carousel */
 
@@ -57,5 +53,8 @@ ul>li {
 @media (min-width: 768px) {
     #socialmedia li a i {
         font-size: xx-large;
+    }
+    #footernavbar li a {
+        font-size: x-large;
     }
 }
