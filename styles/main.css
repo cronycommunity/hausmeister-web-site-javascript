@@ -28,6 +28,10 @@ ul>li {
     margin-top: 40px;
 }
 
+#footernavbar li a {
+    font-size: x-large;
+}
+
 
 /* header carousel */
 
@@ -39,4 +43,19 @@ ul>li {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+
+/* footer adjusment */
+
+@media (max-width: 768px) {
+    #socialmedia li a i {
+        font-size: x-large;
+    }
+}
+
+@media (min-width: 768px) {
+    #socialmedia li a i {
+        font-size: xx-large;
+    }
 }
