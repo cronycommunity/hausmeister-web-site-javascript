@@ -58,3 +58,18 @@ ul>li {
         font-size: x-large;
     }
 }
+
+#img1,
+#img2,
+#img3 {
+    transform: translateX(-150%);
+}
+
+@keyframes slidingAnimation {
+    from {
+        transform: translateX(-150%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
