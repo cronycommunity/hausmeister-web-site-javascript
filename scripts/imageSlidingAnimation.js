@@ -1,51 +1,33 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const image1 = document.getElementById("img1");
-    const image2 = document.getElementById("img2");
-    const image3 = document.getElementById("img3");
-    image1.style.left = "-1200px";
-    image2.style.left = "-1200px";
-    image3.style.left = "-1200px";
+    // initial position of the images
+    document.addEventListener("DOMContentLoaded", () => {
+        const img1 = document.getElementById('img1');
+        const img2 = document.getElementById('img2');
+        const img3 = document.getElementById('img3');
+    });
 
-});
-let position = 0;
-let animationRepetingControl = 0;
-window.addEventListener("scroll", function(e) {
-    imageAnimations();
-    position = window.scrollY;
-    console.log(position)
-});
+    ////////////////////////////
 
-const imageAnimations = () => {
+    let position = 0;
+    let animationRepetingControl = 0;
+    window.addEventListener("scroll", function(e) {
+        imageAnimations();
+        position = window.scrollY;
+    });
 
-    const imageSliding = [
-        { left: "-500px" },
-        { left: "0px" }
-    ];
+    const imageAnimations = () => {
+        if (position > 10 && animationRepetingControl == 0) {
+            img1.style.animation = "slidingAnimation 1.5s linear 1";
+            img1.style.transform = "translateX(" + (0) + "%)";
+            animationRepetingControl++;
 
-    const imageTiming = {
-        duration: 1000,
-        iterations: 1,
+        } else if (position > 400 && animationRepetingControl == 1) {
+            img2.style.animation = "slidingAnimation 1.5s linear 1";
+            img2.style.transform = "translateX(" + (0) + "%)";
+            animationRepetingControl++;
+
+        } else if (position > 800 && animationRepetingControl == 2) {
+            img3.style.animation = "slidingAnimation 1.5s linear 1";
+            img3.style.transform = "translateX(" + (0) + "%)";
+            animationRepetingControl++;
+        }
     }
-
-    if (position > 10 && animationRepetingControl == 0) {
-        const image = document.getElementById("img1");
-        image.animate(imageSliding, imageTiming);
-        document.getElementById("img1").style.left = "0px";
-        animationRepetingControl++;
-
-    } else if (position > 400 && animationRepetingControl == 1) {
-        const image = document.getElementById("img2");
-        image.animate(imageSliding, imageTiming);
-        document.getElementById("img2").style.left = "0px";
-        animationRepetingControl++;
-
-    } else if (position > 800 && animationRepetingControl == 2) {
-        const image = document.getElementById("img3");
-        image.animate(imageSliding, imageTiming);
-        document.getElementById("img3").style.left = "0px";
-        animationRepetingControl++;
-    }
-
-
-
-}
