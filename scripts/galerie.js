@@ -105,16 +105,12 @@
         const titel = maskieren(album.titel);
         spalte.innerHTML = `
             <article class="album-karte h-100" tabindex="0" role="button"
-                     aria-label="Album ${titel} öffnen">
+                     aria-label="Album öffnen">
                 <div class="album-karte__bild">
-                    <img src="${album.bilder[0].url}" alt="${titel}" loading="lazy" />
+                    <img src="${album.bilder[0].url}" alt="Referenzprojekt" loading="lazy" />
                     <span class="album-karte__anzahl">
                         <i class="bi bi-images"></i> ${bildAnzahl}
                     </span>
-                </div>
-                <div class="album-karte__text">
-                    <h3>${titel}</h3>
-                    ${album.beschreibung ? `<p>${maskieren(album.beschreibung)}</p>` : ""}
                 </div>
             </article>`;
 
@@ -146,8 +142,9 @@
         const bild = album.bilder[aktuellesBild];
         const box = lightbox();
         box.querySelector(".lightbox__bild").src = bild.url;
-        box.querySelector(".lightbox__bild").alt = `${album.titel} – Bild ${aktuellesBild + 1}`;
-        box.querySelector(".lightbox__titel").textContent = album.titel;
+        box.querySelector(".lightbox__bild").alt = `Referenz – Bild ${aktuellesBild + 1}`;
+        const titelEl = box.querySelector(".lightbox__titel");
+        if (titelEl) titelEl.textContent = "";
         box.querySelector(".lightbox__zaehler").textContent =
             `${aktuellesBild + 1} / ${album.bilder.length}`;
         const mehrfach = album.bilder.length > 1;
