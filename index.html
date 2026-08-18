@@ -1,236 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Güngör HMS & Garten</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>B BAU Bauprofis – Bauservice in Augsburg | Necmi Bil</title>
+    <meta name="description"
+        content="B BAU Bauprofis aus Augsburg: Bauservice mit fachgerechter Ausführung. Erfahrenes Team, saubere Arbeit, familiäre Atmosphäre. Jetzt unverbindlich anfragen." />
+    <meta name="theme-color" content="#F5B916" />
+    <link rel="icon" href="images/logo/bbau-logo.svg" type="image/svg+xml" />
 
-    <!-- Bootstrap icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <meta property="og:title" content="B BAU Bauprofis – Bauservice in Augsburg" />
+    <meta property="og:description" content="Fachgerechte Ausführung, ehrliche Beratung, familiäre Atmosphäre." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bbau-bauprofis.de/" />
 
-    <!-- watsapp button -->
-    <link rel="stylesheet" href="styles/watsappButton.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/watsappButton.css" />
 </head>
 
 <body>
-    <!-- whatsapp button -->
-    <a class="float" href="https://api.whatsapp.com/send?phone=+4915786787589&text=Hi%20we%20need%20help%20regarding%20something" title="Share on whatsapp"><img width="auto" height="50" src="images/whatsapp.png" /></a>
+    <!-- WhatsApp Schnellkontakt -->
+    <a class="float"
+        href="https://wa.me/491791503202?text=Guten%20Tag%2C%20ich%20habe%20eine%20Anfrage%20an%20B%20BAU%20Bauprofis."
+        target="_blank" rel="noopener" title="Per WhatsApp schreiben" aria-label="Per WhatsApp schreiben">
+        <i class="bi bi-whatsapp"></i>
+    </a>
 
     <header>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: white; opacity: 90%">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bbau-navbar">
             <div class="container">
-                <a class="navbar-brand" href="#!"><span style="color: #5e9693">Güngör HMS & Garten</span></a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#dienstleistungen">Dienstleistungen</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Kontakt</a>
-                </li>
-                </ul>
-            </div>
+                <a class="navbar-brand" href="#top">
+                    <img src="images/logo/bbau-logo-hell.svg" alt="B BAU Bauprofis" height="46" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hauptmenue"
+                    aria-controls="hauptmenue" aria-expanded="false" aria-label="Menü umschalten">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="hauptmenue">
+                    <ul class="navbar-nav align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link" href="#top">Start</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#leistungen">Leistungen</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#referenzen">Referenzen</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ueber-uns">Über uns</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-bbau btn-sm" href="tel:+491791503202">
+                                <i class="bi bi-telephone-fill"></i> 0179 - 150 32 02
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
-    <main id="main">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-sm-12 rounded">
-                    <img width="100%" height="auto" class="img rounded" src="./images/header.jpg" />
+    <main id="top">
+
+        <!-- ============================ HERO ============================ -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inhalt">
+                    <p class="hero__kicker">Bauservice · Augsburg &amp; Umgebung</p>
+                    <h1 class="hero__titel">
+                        Bevor Sie bauen –<br />
+                        <span class="hervorgehoben">sprechen Sie mit Necmi Bil.</span>
+                    </h1>
+                    <p class="hero__text">
+                        Fachgerechte Ausführung, ehrliche Beratung und ein Ansprechpartner,
+                        der von der ersten Besichtigung bis zur Übergabe derselbe bleibt.
+                    </p>
+                    <div class="hero__aktionen">
+                        <a class="btn btn-bbau btn-lg" href="tel:+491791503202">
+                            <i class="bi bi-telephone-fill"></i> Jetzt anrufen
+                        </a>
+                        <a class="btn btn-bbau-outline btn-lg" href="#kontakt">
+                            Unverbindlich anfragen
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container" id="dienstleistungen">
-            <div class="row">
-                <h3 class="col-sm h3">Gartenpflege</h3>
-            </div>
-            <div class="row justify-content-center align-items-center">
-                <div id="img1" class="col-sm-5 shadow p-2 mb-2 bg-white rounded">
-                    <img class="img-fluid" src="./images/garten-pflege.jpg" alt="" />
-                </div>
-                <div class="col-sm-7 text-left">
-                    <ul>
-                        <li>Rasenmähen</li>
-                        <li>Baumschnitt & Heckenschnitt</li>
-                        <li>Laubentfernung</li>
-                        <li>Bewässerung & Düngung</li>
-                        <li>Gartenabfallentsorgung</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <h3 class="col-sm h3">Gebäudepflege</h3>
-            </div>
-            <div class="row justify-content-center align-items-center">
-                <div id="img2" class="col-sm-5 shadow p-2 mb-2 bg-white rounded">
-                    <img class="img-fluid" src="./images/Gebaeudepflege.jpeg" alt="" />
-                </div>
-                <div class="col-sm-7 text-left">
-                    <ul>
-                        <li>Treppenhausreinigung</li>
-                        <li>Müllentsorgung</li>
-                        <li>Technische Wartung & Reparaturen</li>
-                        <li>Aufzug- & Kellerpflege</li>
-                    </ul>
+        </section>
+
+        <!-- ======================== SLOGAN-BAND ========================= -->
+        <section class="band-slogans">
+            <div class="container">
+                <div class="row text-center g-4">
+                    <div class="col-md-4">
+                        <i class="bi bi-patch-check-fill band-slogans__icon"></i>
+                        <h2 class="band-slogans__titel">Fachgerechte Ausführung</h2>
+                        <p>Sauber gearbeitet, nach den anerkannten Regeln der Technik – ohne Kompromisse.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="bi bi-people-fill band-slogans__icon"></i>
+                        <h2 class="band-slogans__titel">Familiäre Atmosphäre</h2>
+                        <p>Persönlicher Kontakt statt Callcenter. Sie wissen immer, wer bei Ihnen arbeitet.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="bi bi-tools band-slogans__icon"></i>
+                        <h2 class="band-slogans__titel">Erfahrung vom Fach</h2>
+                        <p>Jahrelange Praxis auf der Baustelle – wir wissen, worauf es im Detail ankommt.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <h3 class="col-sm h3">Winterdienst</h3>
-            </div>
-            <div class="row justify-content-center align-items-center">
-                <div id="img3" class="col-sm-5 shadow p-2 mb-2 bg-white rounded">
-                    <img class="img-fluid" src="./images/Winterdienst.jpeg" alt=" " />
+        </section>
+
+        <!-- ========================= LEISTUNGEN ========================= -->
+        <section id="leistungen" class="abschnitt">
+            <div class="container">
+                <p class="abschnitt__kicker">Unsere Leistungen</p>
+                <h2 class="abschnitt__titel">Bauservice aus einer Hand</h2>
+                <p class="abschnitt__einleitung">
+                    Wir unterstützen Bauherren, Hausverwaltungen und Betriebe bei Umbau,
+                    Renovierung und Instandsetzung. Was wir übernehmen, führen wir fachgerecht
+                    aus – und was besser in andere Hände gehört, sagen wir Ihnen offen.
+                </p>
+
+                <div class="row g-4 mt-2">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="leistung">
+                            <i class="bi bi-bricks leistung__icon"></i>
+                            <h3>Renovierung &amp; Umbau</h3>
+                            <p>Wohnungen, Büros und Ladenflächen instand setzen und neu aufteilen.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="leistung">
+                            <i class="bi bi-layout-wtf leistung__icon"></i>
+                            <h3>Trockenbau &amp; Innenausbau</h3>
+                            <p>Ständerwände, abgehängte Decken, Vorsatzschalen und Dämmung.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="leistung">
+                            <i class="bi bi-grid-3x3-gap-fill leistung__icon"></i>
+                            <h3>Boden- &amp; Belagsarbeiten</h3>
+                            <p>Untergrund vorbereiten, Laminat, Vinyl und Teppichböden verlegen.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="leistung">
+                            <i class="bi bi-hammer leistung__icon"></i>
+                            <h3>Abbruch &amp; Entkernung</h3>
+                            <p>Rückbau nicht tragender Bauteile, besenrein und fachgerecht entsorgt.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="leistung">
+                            <i class="bi bi-signpost-split-fill leistung__icon"></i>
+                            <h3>Außenanlagen</h3>
+                            <p>Wege, Hofflächen und Einfassungen – gepflastert, sauber verlegt.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="leistung">
+                            <i class="bi bi-clipboard-check leistung__icon"></i>
+                            <h3>Beratung vor Ort</h3>
+                            <p>Wir schauen uns die Baustelle an und sagen Ihnen ehrlich, was sinnvoll ist.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-7 text-left">
-                    <ul>
-                        <li>Schneeräumen</li>
-                        <li>Streudienst & Glatteisbeseitigung</li>
-                    </ul>
+            </div>
+        </section>
+
+        <!-- ========================= REFERENZEN ========================= -->
+        <section id="referenzen" class="abschnitt abschnitt--dunkel">
+            <div class="container">
+                <p class="abschnitt__kicker">Referenzen</p>
+                <h2 class="abschnitt__titel">Ausgeführte Arbeiten</h2>
+                <p class="abschnitt__einleitung">
+                    Ein Blick auf abgeschlossene Projekte sagt mehr als jede Beschreibung.
+                    Klicken Sie ein Album an, um alle Bilder zu sehen.
+                </p>
+
+                <div class="row g-4 mt-2" id="galerie-raster">
+                    <div class="col-12">
+                        <p class="galerie-hinweis">
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            Referenzen werden geladen …
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <h3 class="col-sm h3">Wohnungsauflösung</h3>
-            </div>
-            <div class="row justify-content-center align-items-center">
-                <div id="img4" class="col-sm-5 shadow p-2 mb-2 bg-white rounded">
-                    <img class="img-fluid" src="./images/Wohnungsauflosung.jpeg" alt="" />
+        </section>
+
+        <!-- ========================== ÜBER UNS ========================== -->
+        <section id="ueber-uns" class="abschnitt">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <p class="abschnitt__kicker">Über uns</p>
+                        <h2 class="abschnitt__titel">Ein Handschlag, ein Ansprechpartner</h2>
+                        <p>
+                            B BAU Bauprofis ist ein inhabergeführter Bauservice aus Augsburg.
+                            Necmi Bil steht persönlich für jedes Projekt gerade – von der
+                            Besichtigung über die Terminplanung bis zur Übergabe.
+                        </p>
+                        <p>
+                            Wir arbeiten mit einem festen, eingespielten Team. Das merken
+                            Sie an sauberen Baustellen, verlässlichen Terminen und daran,
+                            dass Sie jederzeit wissen, wen Sie anrufen können.
+                        </p>
+                        <ul class="vorteile">
+                            <li><i class="bi bi-check-lg"></i> Feste Ansprechperson vom ersten Termin an</li>
+                            <li><i class="bi bi-check-lg"></i> Klare Absprachen, nachvollziehbare Angebote</li>
+                            <li><i class="bi bi-check-lg"></i> Termintreue und saubere Baustellen</li>
+                            <li><i class="bi bi-check-lg"></i> Ehrliche Einschätzung – auch wenn sie „nein“ lautet</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <blockquote class="zitat">
+                            <p>„Bevor Sie eine Arbeit vergeben – sprechen Sie mit Necmi Bil.“</p>
+                            <footer>Necmi Bil · Inhaber, B BAU Bauprofis</footer>
+                        </blockquote>
+                    </div>
                 </div>
-                <div class="col-sm-7 text-left">
-                    <ul>
-                        <li>Entsorgung von Altmöbeln</li>
-                        <li>Wohnung & Keller Reinigung</li>
-                        <li>Tapeten- & Teppichentfernung</li>
-                    </ul>
+            </div>
+        </section>
+
+        <!-- ============================ CTA ============================= -->
+        <section class="cta-band">
+            <div class="container text-center">
+                <h2>Sie planen ein Projekt?</h2>
+                <p>Rufen Sie an oder schreiben Sie uns – wir schauen uns die Sache in Ruhe an.</p>
+                <div class="hero__aktionen justify-content-center">
+                    <a class="btn btn-dunkel btn-lg" href="tel:+491791503202">
+                        <i class="bi bi-telephone-fill"></i> 0179 - 150 32 02
+                    </a>
+                    <a class="btn btn-dunkel-outline btn-lg" href="mailto:bil.necmi@gmx.net">
+                        <i class="bi bi-envelope-fill"></i> bil.necmi@gmx.net
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <h3 class="col-sm h3">Zaun- & Wegpflege</h3>
-            </div>
-            <div class="row justify-content-center align-items-center">
-                <div id="img5" class="col-sm-5 shadow p-2 mb-2 bg-white rounded">
-                    <img class="img-fluid" src="./images/Zaun-Wegpflege.jpeg" alt="" />
-                </div>
-                <div class="col-sm-7 text-left">
-                    <ul>
-                        <li>Wege & Gehwege Reinigung</li>
-                        <li>Zaunreparatur & Pflege</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        </section>
     </main>
 
-    <div class="container mt-3">
-        <div class="row">
-            <div class="col-8 mx-auto">
-                <hr style="border-top: 3px double #8c8b8b" />
-            </div>
-        </div>
-    </div>
-
-    <footer class="footer-basic" id="contact">
-        <div class="container-fluid">
-            <div class="row align-middle">
-                <div class="col-sm-4 text-left mt-4">
-                    <h2>Standort München</h2>
+    <!-- ============================ FOOTER ============================== -->
+    <footer id="kontakt" class="fusszeile">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <img src="images/logo/bbau-logo-hell.svg" alt="B BAU Bauprofis" class="fusszeile__logo" />
+                    <h2 class="fusszeile__titel">Standort Augsburg</h2>
                     <p>
-                        <b>Anschrift:</b><br />Wittelsbacher Str. 38 <br /> 82110 Germering
+                        <b>Anschrift</b><br />
+                        Necmi Bil<br />
+                        Haydnstraße 9<br />
+                        86154 Augsburg
                     </p>
                     <p>
-                        <b>Telefon:</b>
-                        <a href="tel:+4915786787589 ">+49 1578 6787589 </a><br />
-                        <b>Telefon:</b>
-                        <a href="tel:+4915786787589 ">+49 1578 6787589 </a><br />
-                        <b>E-Mail:</b>
-                        <a href="mailto:guengoer.hms@gmx.de">guengoer.hms@gmx.de</a
-              >
-            </p>
-          </div>
-          <div class="col-sm-8 text-center" id="adsress-on-map ">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5325.320849437782!2d11.37155857645483!3d48.13607167124331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479dd6386093a251%3A0x348608124011a7fe!2sWittelsbacherstra%C3%9Fe%2038%2C%2082110%20Germering!5e0!3m2!1str!2sde!4v1737361962046!5m2!1str!2sde"
-              style="border: 0"
-              height="100% "
-              width="100% "
-              allowfullscreen=" "
-              loading="lazy "
-              referrerpolicy="no-referrer-when-downgrade "
-            ></iframe>
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col-8 mx-auto">
-            <hr style="border-top: 3px double #8c8b8b" />
-          </div>
-        </div>
-        <div class="row mt-4 justify-content-center">
-          <ul id="socialmedia" class="col-sm-6 list-inline d-flex">
-            <li class="list-inline-item">
-              <a class="text-muted" href="#">
-                <i class="bi bi-instagram"></i>
-              </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="text-muted" href="#">
-                                <i class="bi bi-facebook"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="text-muted" href="#">
-                                <i class="bi bi-twitter"></i>
-                            </a>
-                        </li>
-                        </ul>
+                        <b>Mobil</b>
+                        <a href="tel:+491791503202">0179 - 150 32 02</a><br />
+                        <b>E-Mail</b>
+                        <a href="mailto:bil.necmi@gmx.net">bil.necmi@gmx.net</a>
+                    </p>
+                    <p>
+                        <b>Erreichbarkeit</b><br />
+                        Mo. – Fr. 08:00 – 18:00 Uhr · Sa. nach Vereinbarung
+                    </p>
                 </div>
-                <div class="row justify-content-center">
-                    <ul id="footernavbar" class="col-sm-8 list-inline d-flex">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link px-2 text-muted">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#dienstleistungen" class="nav-link px-2 text-muted">Dienstleistungen</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link px-2 text-muted">Kontakt</a>
-                        </li>
-                    </ul>
+                <div class="col-lg-7">
+                    <div class="karte">
+                        <iframe title="Standort Haydnstraße 9, 86154 Augsburg auf Google Maps"
+                            src="https://www.google.com/maps?q=Haydnstra%C3%9Fe%209,%2086154%20Augsburg&output=embed&hl=de"
+                            style="border: 0" loading="lazy" allowfullscreen
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
+
+            <hr class="fusszeile__linie" />
+
+            <div class="row align-items-center gy-3">
+                <div class="col-md-6">
+                    <ul class="fusszeile__menue list-inline mb-0">
+                        <li class="list-inline-item"><a href="#top">Start</a></li>
+                        <li class="list-inline-item"><a href="#leistungen">Leistungen</a></li>
+                        <li class="list-inline-item"><a href="#referenzen">Referenzen</a></li>
+                        <li class="list-inline-item"><a href="#kontakt">Kontakt</a></li>
+                        <li class="list-inline-item"><a href="impressum.html">Impressum</a></li>
+                        <li class="list-inline-item"><a href="datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small>&copy; <span id="jahr">2026</span> B BAU Bauprofis · Necmi Bil, Augsburg</small>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2 " crossorigin="anonymous "></script>
-    <script src="scripts/imageSlidingAnimation.js"></script>
+    <!-- =========================== LIGHTBOX ============================= -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Bildergalerie">
+        <button class="lightbox__schliessen" type="button" aria-label="Schließen">
+            <i class="bi bi-x-lg"></i>
+        </button>
+        <button class="lightbox__nav lightbox__zurueck" type="button" aria-label="Vorheriges Bild">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <figure class="lightbox__figur">
+            <img class="lightbox__bild" src="" alt="" />
+            <figcaption>
+                <span class="lightbox__titel"></span>
+                <span class="lightbox__zaehler"></span>
+            </figcaption>
+        </figure>
+        <button class="lightbox__nav lightbox__weiter" type="button" aria-label="Nächstes Bild">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="scripts/galerie.js"></script>
+    <script src="scripts/seite.js"></script>
 </body>
 
 </html>

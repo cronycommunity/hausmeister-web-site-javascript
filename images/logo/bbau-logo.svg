@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 150" role="img" aria-label="B BAU Bauprofis">
+  <title>B BAU Bauprofis</title>
+  <!-- linker schwarzer Block mit gelbem B -->
+  <rect x="0" y="0" width="118" height="92" fill="#1a1a1a"/>
+  <text x="59" y="76" text-anchor="middle" font-family="Arial Black, Arial, Helvetica, sans-serif"
+        font-weight="900" font-size="78" fill="#F5B916" stroke="#1a1a1a" stroke-width="2">B</text>
+  <!-- rechter gelber Block mit schwarzem BAU -->
+  <rect x="118" y="0" width="302" height="92" fill="#F5B916"/>
+  <text x="269" y="76" text-anchor="middle" font-family="Arial Black, Arial, Helvetica, sans-serif"
+        font-weight="900" font-size="78" fill="#1a1a1a">BAU</text>
+  <!-- Schriftzug Bauprofis -->
+  <text x="415" y="132" text-anchor="end" font-family="Brush Script MT, Segoe Script, cursive"
+        font-style="italic" font-size="52" fill="#1a1a1a">Bauprofis</text>
+</svg>

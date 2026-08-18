@@ -1,60 +1,667 @@
-/* the codes be added later */
+/* =================================================================
+   B BAU Bauprofis – Hauptstylesheet
+   Farbwelt nach Firmenlogo: Gelb #F5B916 auf Anthrazit/Schwarz
+   ================================================================= */
 
-.bi-dot {
-    background-color: transparent !important;
-    font-size: large;
-    font-weight: bold;
-    border: #000
+:root {
+    --bbau-gelb: #F5B916;
+    --bbau-gelb-dunkel: #d9a20c;
+    --bbau-schwarz: #141414;
+    --bbau-anthrazit: #1f2124;
+    --bbau-grau: #6b6f76;
+    --bbau-hellgrau: #f4f5f7;
+    --bbau-weiss: #ffffff;
+    --bbau-radius: 4px;
 }
 
-.flex-wrap {
-    height: 300px;
+body {
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: var(--bbau-anthrazit);
+    background-color: var(--bbau-weiss);
 }
 
-ul>li {
-    font-weight: bold;
-    margin: 5px auto;
+h1, h2, h3,
+.navbar-brand {
+    font-family: "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+    letter-spacing: 0.5px;
 }
 
-.h3 {
-    margin-top: 40px;
+a {
+    color: var(--bbau-anthrazit);
 }
 
-nav .container a {
-    margin-left: 3%;
+a:hover {
+    color: var(--bbau-gelb-dunkel);
 }
 
+/* ------------------------------- Buttons ------------------------- */
 
-/* footer adjusment */
+.btn-bbau,
+.btn-bbau:focus {
+    background-color: var(--bbau-gelb);
+    border: 2px solid var(--bbau-gelb);
+    color: var(--bbau-schwarz);
+    font-weight: 700;
+    border-radius: var(--bbau-radius);
+}
 
-@media (max-width: 768px) {
-    #socialmedia li a i {
-        font-size: x-large;
+.btn-bbau:hover {
+    background-color: var(--bbau-gelb-dunkel);
+    border-color: var(--bbau-gelb-dunkel);
+    color: var(--bbau-schwarz);
+}
+
+.btn-bbau-outline {
+    background-color: transparent;
+    border: 2px solid var(--bbau-weiss);
+    color: var(--bbau-weiss);
+    font-weight: 700;
+    border-radius: var(--bbau-radius);
+}
+
+.btn-bbau-outline:hover {
+    background-color: var(--bbau-weiss);
+    color: var(--bbau-schwarz);
+}
+
+.btn-dunkel {
+    background-color: var(--bbau-schwarz);
+    border: 2px solid var(--bbau-schwarz);
+    color: var(--bbau-gelb);
+    font-weight: 700;
+    border-radius: var(--bbau-radius);
+}
+
+.btn-dunkel:hover {
+    background-color: #000;
+    color: var(--bbau-gelb);
+}
+
+.btn-dunkel-outline {
+    background-color: transparent;
+    border: 2px solid var(--bbau-schwarz);
+    color: var(--bbau-schwarz);
+    font-weight: 700;
+    border-radius: var(--bbau-radius);
+}
+
+.btn-dunkel-outline:hover {
+    background-color: var(--bbau-schwarz);
+    color: var(--bbau-gelb);
+}
+
+/* ------------------------------ Navbar --------------------------- */
+
+.bbau-navbar {
+    background-color: rgba(20, 20, 20, 0.95);
+    backdrop-filter: blur(6px);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.bbau-navbar .nav-link {
+    color: var(--bbau-weiss);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.bbau-navbar .nav-link:hover,
+.bbau-navbar .nav-link:focus {
+    color: var(--bbau-gelb);
+}
+
+.bbau-navbar .navbar-brand img {
+    display: block;
+}
+
+/* ------------------------------- Hero ---------------------------- */
+
+.hero {
+    position: relative;
+    min-height: 78vh;
+    display: flex;
+    align-items: center;
+    padding: 9rem 0 5rem;
+    color: var(--bbau-weiss);
+    background:
+        linear-gradient(115deg, rgba(20, 20, 20, 0.94) 0%, rgba(20, 20, 20, 0.72) 55%, rgba(31, 33, 36, 0.6) 100%),
+        repeating-linear-gradient(135deg, #2a2c30 0 22px, #232529 22px 44px);
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 8px;
+    background: var(--bbau-gelb);
+}
+
+.hero__inhalt {
+    max-width: 42rem;
+}
+
+.hero__kicker {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--bbau-gelb);
+    margin-bottom: 1rem;
+}
+
+.hero__titel {
+    font-size: clamp(2.4rem, 6vw, 4.2rem);
+    font-weight: 700;
+    line-height: 1.05;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+}
+
+.hervorgehoben {
+    color: var(--bbau-gelb);
+}
+
+.hero__text {
+    font-size: 1.1rem;
+    color: #dcdde0;
+    margin-bottom: 2rem;
+}
+
+.hero__aktionen {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+}
+
+/* --------------------------- Slogan-Band ------------------------- */
+
+.band-slogans {
+    background-color: var(--bbau-gelb);
+    color: var(--bbau-schwarz);
+    padding: 3.5rem 0;
+}
+
+.band-slogans__icon {
+    font-size: 2.4rem;
+    display: block;
+    margin-bottom: 0.6rem;
+}
+
+.band-slogans__titel {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+}
+
+.band-slogans p {
+    margin-bottom: 0;
+    font-size: 0.98rem;
+}
+
+/* ---------------------------- Abschnitte ------------------------- */
+
+.abschnitt {
+    padding: 5rem 0;
+}
+
+.abschnitt--dunkel {
+    background-color: var(--bbau-anthrazit);
+    color: var(--bbau-weiss);
+}
+
+.abschnitt__kicker {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--bbau-gelb-dunkel);
+    margin-bottom: 0.5rem;
+}
+
+.abschnitt--dunkel .abschnitt__kicker {
+    color: var(--bbau-gelb);
+}
+
+.abschnitt__titel {
+    font-size: clamp(1.9rem, 4vw, 2.8rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+.abschnitt__titel::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 68px;
+    height: 5px;
+    background: var(--bbau-gelb);
+}
+
+.abschnitt__einleitung {
+    max-width: 52rem;
+    color: var(--bbau-grau);
+}
+
+.abschnitt--dunkel .abschnitt__einleitung {
+    color: #c7c9cd;
+}
+
+/* ---------------------------- Leistungen ------------------------- */
+
+.leistung {
+    height: 100%;
+    background-color: var(--bbau-hellgrau);
+    border-left: 5px solid var(--bbau-gelb);
+    padding: 1.75rem 1.5rem;
+    border-radius: var(--bbau-radius);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.leistung:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.12);
+}
+
+.leistung__icon {
+    font-size: 2rem;
+    color: var(--bbau-gelb-dunkel);
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.leistung h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.leistung p {
+    margin-bottom: 0;
+    color: var(--bbau-grau);
+    font-size: 0.97rem;
+}
+
+.leistung__hinweis {
+    margin-top: 2.5rem;
+    padding: 1rem 1.25rem;
+    background-color: #fff8e4;
+    border: 1px solid #f0dfae;
+    border-radius: var(--bbau-radius);
+    font-size: 0.92rem;
+    color: #6a5a2a;
+}
+
+/* ------------------------- Referenz-Galerie ---------------------- */
+
+.album-karte {
+    background-color: #2a2d31;
+    border-radius: var(--bbau-radius);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.album-karte:hover,
+.album-karte:focus-visible {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
+    outline: 2px solid var(--bbau-gelb);
+}
+
+.album-karte__bild {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background-color: #1a1c1f;
+}
+
+.album-karte__bild img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.album-karte:hover .album-karte__bild img {
+    transform: scale(1.05);
+}
+
+.album-karte__anzahl {
+    position: absolute;
+    right: 0.6rem;
+    bottom: 0.6rem;
+    background-color: var(--bbau-gelb);
+    color: var(--bbau-schwarz);
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.15rem 0.55rem;
+    border-radius: var(--bbau-radius);
+}
+
+.album-karte__text {
+    padding: 1rem 1.1rem 1.25rem;
+}
+
+.album-karte__text h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--bbau-weiss);
+    margin-bottom: 0.25rem;
+}
+
+.album-karte__text p {
+    font-size: 0.9rem;
+    color: #b6b9be;
+    margin-bottom: 0;
+}
+
+.galerie-hinweis {
+    color: #c7c9cd;
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 0;
+}
+
+/* ----------------------------- Lightbox -------------------------- */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background-color: rgba(0, 0, 0, 0.93);
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.lightbox.ist-offen {
+    display: flex;
+}
+
+.lightbox__figur {
+    max-width: min(1100px, 92vw);
+    max-height: 88vh;
+    margin: 0;
+    text-align: center;
+}
+
+.lightbox__bild {
+    max-width: 100%;
+    max-height: 78vh;
+    object-fit: contain;
+    border-radius: var(--bbau-radius);
+}
+
+.lightbox__figur figcaption {
+    margin-top: 0.75rem;
+    color: var(--bbau-weiss);
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.lightbox__titel {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.lightbox__zaehler {
+    color: var(--bbau-gelb);
+    font-size: 0.9rem;
+}
+
+.lightbox__schliessen,
+.lightbox__nav {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--bbau-weiss);
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.lightbox__schliessen:hover,
+.lightbox__nav:hover {
+    background-color: var(--bbau-gelb);
+    color: var(--bbau-schwarz);
+}
+
+.lightbox__schliessen {
+    top: 1.25rem;
+    right: 1.25rem;
+}
+
+.lightbox__zurueck {
+    left: 1.25rem;
+}
+
+.lightbox__weiter {
+    right: 1.25rem;
+}
+
+/* ------------------------------ Über uns ------------------------- */
+
+.vorteile {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1.5rem;
+}
+
+.vorteile li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    margin-bottom: 0.6rem;
+    font-weight: 500;
+}
+
+.vorteile i {
+    color: var(--bbau-gelb-dunkel);
+    font-size: 1.2rem;
+    line-height: 1.35;
+}
+
+.zitat {
+    background-color: var(--bbau-schwarz);
+    color: var(--bbau-weiss);
+    border-left: 8px solid var(--bbau-gelb);
+    padding: 2.5rem 2rem;
+    border-radius: var(--bbau-radius);
+    margin: 0;
+}
+
+.zitat p {
+    font-family: "Barlow Condensed", Arial, sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
+    line-height: 1.25;
+    margin-bottom: 1rem;
+}
+
+.zitat footer {
+    color: var(--bbau-gelb);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ------------------------------- CTA ----------------------------- */
+
+.cta-band {
+    background-color: var(--bbau-gelb);
+    color: var(--bbau-schwarz);
+    padding: 4rem 0;
+}
+
+.cta-band h2 {
+    font-size: clamp(1.9rem, 4vw, 2.8rem);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cta-band p {
+    margin-bottom: 1.75rem;
+}
+
+/* ----------------------------- Fußzeile -------------------------- */
+
+.fusszeile {
+    background-color: var(--bbau-schwarz);
+    color: #d3d5d8;
+    padding: 4rem 0 2rem;
+}
+
+.fusszeile__logo {
+    height: 52px;
+    margin-bottom: 1.5rem;
+}
+
+.fusszeile__titel {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--bbau-weiss);
+    margin-bottom: 1rem;
+}
+
+.fusszeile b {
+    color: var(--bbau-gelb);
+    font-weight: 700;
+}
+
+.fusszeile a {
+    color: #d3d5d8;
+    text-decoration: none;
+}
+
+.fusszeile a:hover {
+    color: var(--bbau-gelb);
+    text-decoration: underline;
+}
+
+.fusszeile__linie {
+    border-top: 2px solid #333;
+    opacity: 1;
+    margin: 2.5rem 0 1.5rem;
+}
+
+.fusszeile__menue li {
+    margin-right: 1rem;
+}
+
+.karte {
+    height: 100%;
+    min-height: 320px;
+    border: 4px solid var(--bbau-gelb);
+    border-radius: var(--bbau-radius);
+    overflow: hidden;
+}
+
+.karte iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    display: block;
+}
+
+/* --------------------------- Rechtstexte ------------------------- */
+
+.rechtstext {
+    padding: 8rem 0 4rem;
+}
+
+.rechtstext h1 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.rechtstext h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.rechtstext p,
+.rechtstext li {
+    color: #4a4d52;
+}
+
+/* -------------------------- Einblend-Effekt ---------------------- */
+
+.einblenden {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.einblenden.sichtbar {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .einblenden,
+    .einblenden.sichtbar {
+        opacity: 1;
+        transform: none;
+        transition: none;
     }
 }
 
-@media (min-width: 768px) {
-    #socialmedia li a i {
-        font-size: xx-large;
-    }
-    #footernavbar li a {
-        font-size: x-large;
-    }
-}
+/* ----------------------------- Mobil ----------------------------- */
 
-#img1,
-#img2,
-#img3
-#img4
-#img5 {
-    transform: translateX(-150%);
-}
-
-@keyframes slidingAnimation {
-    from {
-        transform: translateX(-150%);
+@media (max-width: 991.98px) {
+    .bbau-navbar .navbar-nav {
+        padding-top: 0.75rem;
+        gap: 0.25rem;
     }
-    to {
-        transform: translateX(0%);
+
+    .bbau-navbar .nav-item.ms-lg-3 {
+        margin-top: 0.5rem;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 7.5rem 0 4rem;
+    }
+
+    .lightbox__nav {
+        width: 42px;
+        height: 42px;
+    }
+
+    .lightbox__zurueck {
+        left: 0.5rem;
+    }
+
+    .lightbox__weiter {
+        right: 0.5rem;
     }
 }

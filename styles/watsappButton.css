@@ -1,15 +1,37 @@
+/* Schwebender WhatsApp-Button */
+
 .float {
     position: fixed;
-    bottom: 20px;
     right: 20px;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
+    bottom: 20px;
+    z-index: 1500;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25d366;
+    color: #fff;
     font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.my-float {
-    margin-top: 16px;
+.float:hover,
+.float:focus {
+    background-color: #1da851;
+    color: #fff;
+    transform: scale(1.06);
+}
+
+@media (max-width: 575.98px) {
+    .float {
+        width: 52px;
+        height: 52px;
+        font-size: 26px;
+        right: 14px;
+        bottom: 14px;
+    }
 }

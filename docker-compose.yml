@@ -1,0 +1,12 @@
+# Nur fuer die lokale Entwicklung. Auf dem Server laeuft das Image
+# ueber Jenkins (docker build) und anschliessend per docker run.
+# Die Referenzbilder liegen im Image (COPY im Dockerfile) -
+# bewusst kein Volume-Mount, damit lokal und produktiv identisch laeuft.
+services:
+  bbau-web:
+    build: .
+    image: bbau-bauprofis
+    container_name: bbau-bauprofis
+    ports:
+      - "5055:80"
+    restart: unless-stopped
